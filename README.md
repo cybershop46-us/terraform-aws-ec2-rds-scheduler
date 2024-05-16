@@ -1,4 +1,4 @@
-<!-- markdownlint-disable -->
+![image](https://github.com/cybershop46-us/terraform-aws-ec2-rds-scheduler/assets/111092097/a68c83d6-2f58-4471-8162-5ad609b856c7)<!-- markdownlint-disable -->
 
 # This Terraform module provides a convenient solution for scheduling the stop and start actions of EC2, ASG and RDS instances, and now it's compatible with Aurora Clusters. [![Latest Release](https://img.shields.io/github/v/release/eanselmi/ec2-rds-scheduler.svg)](https://github.com/eanselmi/ec2-rds-scheduler/releases/latest)
 
@@ -74,6 +74,11 @@ module "ec2-rds-scheduler" {
 Note: If you prefer to utilize a specific module version instead of the latest version, you have the option to specify it at this point. For instance, in this particular example, we employ version 1.0.5.
 
 Please be advised that the inclusion of ec2_start_stop_schedules, asg_start_stop_schedules and rds_start_stop_schedules is entirely optional. You may choose to add either of them based on your specific requirements. In the event that you decide not to include any of these schedules, only the Lambda Functions and IAM roles will be deployed.
+
+First step, go to your aws cli
+Secod step, configure your access keys,
+
+![image](https://github.com/cybershop46-us/terraform-aws-ec2-rds-scheduler/assets/111092097/d3b7f002-ccef-41a7-b348-a5809b94753d)
 
 <br/>
 
@@ -168,6 +173,13 @@ timezone = "America/Argentina/Buenos_Aires"
 <br/>
 
 ### 4. Please proceed with the application of the changes and enjoy the benefits of the module.
+      In my case i use a tfvars file, so I execute this commands:
+
+      terraform init
+      terraform plan
+      terraform apply -var-file ./payload.tfvars
+      
+![image](https://github.com/cybershop46-us/terraform-aws-ec2-rds-scheduler/assets/111092097/81514bfb-67f7-4433-983d-da6d3650d940)
 
 ---
 
