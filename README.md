@@ -227,4 +227,4 @@ UTC TIME
 
 <br/>
 
-## [If you found this Terraform module helpful, we would appreciate hearing from you. Please feel free to reach out to me on LinkedIn to share your feedback.](https://www.linkedin.com/in/cybershop46-llc-12167075/)
+## [If you found this Terraform module helpful, we would appreciate hearing from you. Please feel free to reach out to me on LinkedIn to share your feedback.](https://www.linkedin.com/in/cybershop46-llc/)
