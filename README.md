@@ -1,4 +1,4 @@
-![image](https://github.com/cybershop46-us/terraform-aws-ec2-rds-scheduler/assets/111092097/a68c83d6-2f58-4471-8162-5ad609b856c7)<!-- markdownlint-disable -->
+
 
 # This Terraform module provides a convenient solution for scheduling the stop and start actions of EC2, ASG and RDS instances, and now it's compatible with Aurora Clusters. [![Latest Release](https://img.shields.io/github/v/release/eanselmi/ec2-rds-scheduler.svg)](https://github.com/eanselmi/ec2-rds-scheduler/releases/latest)
 
