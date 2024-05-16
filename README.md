@@ -193,8 +193,8 @@ To create a app, a service principal and keys that will be used by you to create
 * "schedule_prod" = {  
         "cron_stop"  = "cron(30 02 ? * * *)" 
         "cron_start" = "cron(30 12 ? * * *)"
-        "tag_key"    = "apagado"
-        "tag_value"  = "auto"
+        "tag_key"    = "enviroment"
+        "tag_value"  = "dev"
         }
 UTC TIME
 
