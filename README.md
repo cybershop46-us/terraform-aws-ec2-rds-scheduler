@@ -182,17 +182,49 @@ timezone = "America/Argentina/Buenos_Aires"
       
 ![image](https://github.com/cybershop46-us/terraform-aws-ec2-rds-scheduler/assets/111092097/81514bfb-67f7-4433-983d-da6d3650d940)
 
+# Note
+Use this terraform if you want to start or stop AWS ec2 instances.
+
+# Description
+To create a app, a service principal and keys that will be used by you to create the resources for automatic start / stop AWS resources.
+
+## Variables To Set
+* In the example.tfvars or payload.tfvars file please set the following as per your azure tenant values
+* "schedule_prod" = {  
+        "cron_stop"  = "cron(30 02 ? * * *)" 
+        "cron_start" = "cron(30 12 ? * * *)"
+        "tag_key"    = "apagado"
+        "tag_value"  = "auto"
+        }
+UTC TIME
+
+## To Run
+* PLAN
+  * terraform init
+  * terraform plan -var-file ./example.tfvars
+  * Check the plan output to ensure the changes are acceptable for your systems env
+* APPLY
+  * terraform apply -var-file ./example.tfvars
+* OUTPUT
+  * You can grab terraform output for client_id, client_secret and subscriptions
+  * terraform output -raw client_id
+  * terraform output -raw client_secret
+  * terraform output tenant_id
+
+## To Cleanup
+* DESTROY
+  * terraform destroy var-file ./example.tfvars
 ---
 
 <br/>
 
 ![image](https://i.ibb.co/2s7cWzz/coffee.jpg)
 ### If you find this module useful, please consider helping me with a coffee so I can keep creating more modules like this one :)
-## https://www.buymeacoffee.com/PeE5BDn/
+## https://buymeacoffee.com/ucddvxa8ez
 
 
 ### We welcome any ideas, corrections, or feedback you may have. Your input is greatly appreciated and will contribute to further improving our module.
 
 <br/>
 
-## [If you found this Terraform module helpful, we would appreciate hearing from you. Please feel free to reach out to me on LinkedIn to share your feedback.](https://www.linkedin.com/in/nazareno-anselmi/)
+## [If you found this Terraform module helpful, we would appreciate hearing from you. Please feel free to reach out to me on LinkedIn to share your feedback.](https://www.linkedin.com/in/cybershop46/)
